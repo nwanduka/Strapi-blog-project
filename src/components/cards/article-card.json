@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_cards_article_cards",
+  "info": {
+    "displayName": "ArticleCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ArticleImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ArticleAuthor": {
+      "type": "string"
+    },
+    "ArticleTitle": {
+      "type": "string"
+    },
+    "blog_post": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blog-post.blog-post"
+    }
+  }
+}

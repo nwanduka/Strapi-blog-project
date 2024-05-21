@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "HeroImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Heading": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "required": true
+    },
+    "ArticleCard": {
+      "displayName": "ArticleCard",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "cards.article-card"
+    }
+  }
+}
